@@ -1,0 +1,14 @@
+# Application Datasource Configuration
+app:
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/demodb
+    username: postgres
+    password: password
+    pool-size: 30
+    driver-class-name: org.postgresql.Driver
+
+# Flyway Configuration
+spring:
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
